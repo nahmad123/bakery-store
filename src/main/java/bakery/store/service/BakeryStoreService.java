@@ -229,6 +229,9 @@ public class BakeryStoreService {
 		
 		for (BakeryStore bakeryStore : menuItem.getBakeryStore()){
 			bakeryStore.getMenuItems().remove(menuItem);
+			
+			// .remove(entity) is imp to break the join relationship so a delete
+			// can be performed.
 		}
 		
 		menuItemDao.delete(menuItem);
