@@ -1,0 +1,26 @@
+//create - employee.json
+ {
+ "employeeFirstName": "Samantha",
+ "employeeLastName": "Burns",
+ "employeePhone" : "702-555-6464",
+ "employeeEmail": "samantha_burns@ngo.gov",
+ "employeeJobTitle": "Manager"
+ }
+ 
+ //create - bakerystore.json
+ {
+ "bakeryStoreName": "Really Cool Pet Store",
+ "bakeryStoreAddress": "24 Peg Shop Lane",
+ "bakeryStoreCity": "Reno",
+ "bakeryStoreState": "Nevada",
+ "bakeryStoreZip": "89523",
+ "bakeryStorePhone": "775-203-2496"
+ }
+ 
+ //create - menuitem.json
+ {
+ "menuItemName" : "Chicken Soup",
+ "menuItemQuantity" : "One",
+ "menuItemPrice" : "2.99",
+ "menuItemSpecialNote" : "Serve with crackers"
+ }

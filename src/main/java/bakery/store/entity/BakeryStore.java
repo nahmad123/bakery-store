@@ -34,15 +34,13 @@ public class BakeryStore {
 	@ToString.Exclude
 	@ManyToMany(cascade = CascadeType.PERSIST)
 	@JoinTable(name = "bakery_store_menu_item", joinColumns = @JoinColumn(name = "bakery_store_id"), inverseJoinColumns = @JoinColumn(name = "menu_item_id"))
-	private Set<MenuItem> menuItem = new HashSet<>();
+	private Set<MenuItem> menuItems = new HashSet<>();
 	
 	@EqualsAndHashCode.Exclude
 	@ToString.Exclude
 	@OneToMany(mappedBy = "bakeryStore", cascade = CascadeType.ALL, orphanRemoval = true)
 	private Set<Employee> employee = new HashSet<>();
 	
-	
-	
-	
+
 	
 }

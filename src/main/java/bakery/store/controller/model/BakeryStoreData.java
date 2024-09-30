@@ -20,8 +20,9 @@ public class BakeryStoreData {
 	private String bakeryStoreState;
 	private String bakeryStoreZip;
 	private String bakeryStorePhone;
-	private Set<BakeryStoreMenuItem> menuItem = new HashSet<>();
+	private Set<BakeryStoreMenuItem> menuItems = new HashSet<>();
 	private Set<BakeryStoreEmployee> employees = new HashSet<>();	
+	//if its a set then it should be plural
 	
 	public BakeryStoreData (BakeryStore bakeryStore) {
 		bakeryStoreId = bakeryStore.getBakeryStoreId();
@@ -32,8 +33,8 @@ public class BakeryStoreData {
 		bakeryStoreZip = bakeryStore.getBakeryStoreZip();
 		bakeryStorePhone = bakeryStore.getBakeryStorePhone();
 		
-		for (MenuItem menuItem : bakeryStore.getMenuItem()) {
-			menuItem.add(new BakeryStoreMenuItem (menuItem));
+		for (MenuItem menuItem : bakeryStore.getMenuItems()) {
+			menuItems.add(new BakeryStoreMenuItem (menuItem));
 		}
 		
 		for(Employee employee : bakeryStore.getEmployee()) {

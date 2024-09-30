@@ -26,7 +26,7 @@ public class Employee {
 	
 	@EqualsAndHashCode.Exclude
 	@ToString.Exclude
-	@ManyToOne(cascade = CascadeType.ALL)
+	@ManyToOne(cascade = CascadeType.PERSIST)
 	@JoinColumn(name = "bakery_store_id")
 	private BakeryStore bakeryStore;
 	

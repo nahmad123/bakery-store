@@ -28,7 +28,11 @@ public class MenuItem {
 	
 	@EqualsAndHashCode.Exclude
 	@ToString.Exclude
-	@ManyToMany(mappedBy = "MenuItem", cascade = CascadeType.PERSIST)
+	@ManyToMany(mappedBy = "menuItems", cascade = CascadeType.PERSIST)
 	private Set<BakeryStore> bakeryStore = new HashSet<>();
 
+	
 }
+	
+
+

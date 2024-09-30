@@ -1,0 +1,15 @@
+spring:
+  datasource:
+     username: bakery_store
+     password: bakery_store
+     url: jdbc:mysql://localhost:3306/bakery_store
+     
+  jpa:
+     hibernate:
+        ddl-auto: update
+     show-sql: true
+     defer-datasource-initialization: true
+  
+  sql:
+     init:
+        mode: never
